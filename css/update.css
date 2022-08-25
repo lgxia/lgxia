@@ -1,0 +1,268 @@
+.nav {
+    position: relative;
+    width: 1600px;
+    background-color: lightgrey;
+    border-top: solid 1px rgb(191, 185, 185);
+}
+
+/* 导航模块 */
+.nav .all {
+    position: relative;
+    margin-left: 150px;
+    width: 1180px;
+    height: 400px;
+    background-color: grey;
+
+}
+
+/* 右侧导肮栏目 */
+.nav .all .rightNav {
+    position: absolute;
+    /* padding: 10px; */
+    width: 228px;
+    height: 400px;
+}
+
+.nav .all .rightNav ul li {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+    /* padding-left: 10px; */
+}
+
+.nav .all .rightNav ul li a {
+    color: #fff;
+}
+
+.nav .all .rightNav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav .all .rightNav ul li a:hover {
+    color: #fff;
+}
+
+/* 中间的图片展示部分 */
+.nav .all .centerpicture {
+    position: absolute;
+    top: 0;
+    left: 229px;
+    width: 500px;
+    height: 400px;
+    /* background-color:pink; */
+    overflow: hidden;
+}
+
+.centerpicture .rightContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.centerpicture .rightContent li {
+    float: left;
+    display: none;
+}
+
+.centerpicture .rightContent li .shou {
+    
+    height: 30px;
+    float: left;
+    color: #fff;
+    line-height: 30px;
+    background-color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+}
+
+/* .centerpicture .rightContent li p{
+position: absolute;
+left: 10px;
+
+} */
+.centerpicture .rightContent li p a {
+    padding-left: 7px;
+}
+
+.nav .all .leftNav {
+    /* 设置浮动，圈不住轮播图的左右箭头，因此换成定位 */
+    position: absolute;
+    right: 0px;
+    width: 450px;
+    height: 100%;
+    background-color: white;
+}
+
+.nav .all .leftNav section:first-of-type {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.nav .all .leftNav .vip::after {
+    content: "";
+    position: absolute;
+    top: 85px;
+    right: 50px;
+    width: 150px;
+    height: 0.6px;
+    background-color: rgb(228, 223, 223);
+}
+
+.nav .all .leftNav .jingKuai {
+    position: absolute;
+    top: 88px;
+    right: 0px;
+    font-size: 17px;
+    width: 45%;
+    height: 35%;
+    box-sizing: border-box;
+    padding-top: 4px;
+    /* background-color:  lightblue; */
+}
+
+.nav .all .leftNav .jingKuai h4:nth-of-type(2) {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.nav .all .leftNav .jingKuai h4:last-of-type {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    border: solid 1px grey;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.nav .all .leftNav .jingKuai ul {
+    width: 50px;
+    height: 40px;
+    color: red;
+    font-size: 12px;
+    font-weight: lighter;
+
+}
+
+.nav .all .leftNav .jingKuai ul li {
+    box-sizing: border-box;
+    background-color: rgba(177, 110, 110, 0.4);
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+.nav .all .leftNav .jingKuai .newthContent {
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+
+.nav .all .leftNav .jingKuai .newthContent li {
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: transparent;
+}
+.nav .all .leftNav .jingKuai ul li:hover{
+    color: grey;
+}
+/* .nav .all .leftNav .jingKuai .newthContent li:last-of-type {
+    position: absolute;
+    top: 68px;
+    right: -69px;
+    width: 120px;
+    background-color: rgb(228, 223, 223);
+} */
+
+.timeModle {
+    width: 1600px;
+    height: 400px;
+}
+
+.timeModle .time {
+    position: absolute;
+    left: 150px;
+    top: 420px;
+    width: 1180px;
+    background-color: grey;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+.clearfix {
+    /* IE6、7专有 */
+    *zoom: 1;
+}
+
+.timeModle .time .oneTime {
+    float: left;
+    font-size: 30px;
+    color: white;
+    height: 300px;
+    width: 250px;
+    padding-top: 50px;
+    text-align: center;
+    background-color: red;
+}
+
+.timeModle .time .oneTime p {
+    font-size: 15px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.timeModle .time .oneTime ul {
+    float: left;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.timeModle .time .oneTime ul li {
+    float: left;
+    width: 40px;
+    height: 100%;
+    font-size: medium;
+    line-height: 55px;
+    background-color: black;
+    margin-left: 15px;
+}
+
+.timeModle .time .oneTime ul li:first-of-type {
+    margin-left: 20px;
+}
+
+.timeModle .time .oneTime ul li::after {
+    content: ":";
+    display: block;
+    float: right;
+    font-size: 30px;
+    margin-right: -11px;
+}
+
+
+.timeModle .time .oneTime ul li:last-of-type:after {
+    content: "";
+}
